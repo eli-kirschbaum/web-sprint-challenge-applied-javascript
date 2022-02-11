@@ -17,6 +17,55 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
+  //const cardDiv = document.createElement('div');
+  //cardDiv.classList.add('card');
+  
+
+  //const headlineDiv = document.createElement('div');
+  //headlineDiv.classList.add('headline');
+  //cardDiv.textContent = `${article.headline}`;
+
+  //const authorDiv = document.createElement('div');
+  //authorDiv.classList.add('author');
+
+  //const imgDiv = document.createElement('div');
+  //imgDiv.classList.add('img-container');
+
+  //const image = document.createElement('img');
+  //image.src = `${article.authorPhoto}`;
+  
+  // variable declarations for elements
+  const cardEl = document.createElement('div');
+  const headlineEl = document.createElement('div');
+  const authorEl = document.createElement('div');
+  const imageContainerEl = document.createElement('div');
+  const imageEl = document.createElement('img');
+  const nameEl = document.createElement('span');
+
+  // hierarchy
+  cardEl.appendChild(headlineEl);
+  cardEl.appendChild(authorEl);
+  authorEl.appendChild(imageContainerEl);
+  imageContainerEl.appendChild(imageEl);
+  authorEl.appendChild(nameEl);
+
+  // classes
+  cardEl.classList.add('card');
+  headlineEl.classList.add('headline');
+  authorEl.classList.add('author');
+  imageContainerEl.classList.add('img-container');
+
+  // Text and Attributes
+  headlineEl.textContent = article.headline;
+  imageEl.src = article.authorPhoto;
+  nameEl.textContent = `By ${article.authorName}`;
+
+  // Event Listener
+  cardEl.addEventListener('click', () => {
+    console.log(article.headline)
+  })
+
+  return cardEl;
 }
 
 const cardAppender = (selector) => {
