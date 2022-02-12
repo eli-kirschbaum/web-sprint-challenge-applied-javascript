@@ -10,10 +10,10 @@ You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
 
-- [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
-- [ ] Open the assignment in Canvas and click on the "Set up git" option.
-- [ ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
-- [ ] Check to see that Codegrade has accepted your git submission.
+- [x ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
+- [x ] Open the assignment in Canvas and click on the "Set up git" option.
+- [x ] Push your first commit: `git commit --allow-empty -m "first commit" && git push`.
+- [x ] Check to see that Codegrade has accepted your git submission.
 
 ## Project Instructions
 
@@ -27,17 +27,17 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Instructions
 
-- [ ] Navigate to the root of the project with your command line.
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file.
-- [ ] Run `npm start` to compile the project and serve it.
-- [ ] Navigate Chrome to `http://localhost:3000`
-- [ ] In a separate terminal, run `npm test` to run tests.
+- [x ] Navigate to the root of the project with your command line.
+- [x ] Run `npm install` to download the dependencies listed in the `package.json` file.
+- [x ] Run `npm start` to compile the project and serve it.
+- [x ] Navigate Chrome to `http://localhost:3000`
+- [x ] In a separate terminal, run `npm test` to run tests.
 
 **Steps Required for MVP:**
 
-- [ ] Steps 1 and 2 are explained inside the `src/components/header.js` file.
-- [ ] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
-- [ ] Steps 5 and 6 are explained inside the `src/components/card.js` file.
+- [x ] Steps 1 and 2 are explained inside the `src/components/header.js` file.
+- [x ] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
+- [x ] Steps 5 and 6 are explained inside the `src/components/card.js` file.
 
 **Important Notes:**
 
@@ -50,17 +50,31 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes to the *main* branch.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [x ] Submit via Codegrade by committing and pushing any new changes to the *main* branch.
+- [x ] Check Codegrade for automated feedback.
+- [x] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
+- [x ] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
 Demonstrate your understanding of this week's concepts by answering the following questions:
 
 1. What is the DOM?
+    
+    - DOM stands for Document Object Model. It is a data structure and a representation of the parts that make up a website's structure and content.  It is modeled as a tree with various nested parent and child elements.
+
 2. What is an event?
+
+    - An event at its most basic level is just a thing that happens to HTML elements. Mostly an event is a user interaction with a webpage such as a click, key press, scroll, etc.
+
 3. What is an event listener?
+
+    - This is code that waits for a certain event to happen to a certain element in the DOM then can execute an event handler that does something when that event is triggered.
+
 4. Why would we convert a NodeList into an Array?
+
+    - NodeList is an array-like object but is not an Array itself so is missing methods provided by an array. To manipulate the data like you would normally do with an Array, you have to convert it to an actual Array data type.
+
 5. What is a component?
+
+    - A component is a function that combines javascript, css, and html to output content elements into the DOM. They are meant to be reusable and scalable so that many different elements can be created in the DOM with relatively little lines of code.
